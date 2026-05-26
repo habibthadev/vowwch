@@ -37,6 +37,11 @@ useHead({
   ]),
 })
 
+defineOgImageComponent("OgImageDefault", {
+  title: page.value?.title ?? "vowwch",
+  description: page.value?.description ?? "Runtime contracts for any JavaScript function.",
+})
+
 const mobileTocOpen = ref(false)
 const copyState = ref<"idle" | "copied">("idle")
 

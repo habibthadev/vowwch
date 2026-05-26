@@ -6,6 +6,11 @@ import { usePlayground } from "@/composables/usePlayground"
 
 definePageMeta({ layout: "default" })
 
+defineOgImageComponent("OgImageDefault", {
+  title: "Playground",
+  description: "Experiment with vowwch contracts in the browser.",
+})
+
 const { code, mode, result, running, run, reset, updateMode } = usePlayground()
 </script>
 

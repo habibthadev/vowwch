@@ -3,6 +3,11 @@ import { computed } from "vue"
 
 definePageMeta({ layout: "default" })
 
+defineOgImageComponent("OgImageDefault", {
+  title: "Changelog",
+  description: "All notable changes to vowwch.",
+})
+
 interface ChangelogRelease {
   version: string
   sections: Array<{ heading: string; items: string[] }>
