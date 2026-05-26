@@ -1,0 +1,9 @@
+packages:
+  - "packages/*"
+  - "examples"
+  - "apps/*"
+allowBuilds:
+  "@parcel/watcher": false
+  "@prisma/client": false
+  esbuild: false
+  vue-demi: false
