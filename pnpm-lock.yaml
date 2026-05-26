@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  playwright-core@1.60.0:
+    hash: 246aba5c3aab0bf9c38ff356e668ff708c5043b351e7fc36c84db1547281aebf
+    path: patches/playwright-core@1.60.0.patch
+
 importers:
 
   .:
@@ -9964,7 +9969,7 @@ snapshots:
       ohash: 2.0.11
       pathe: 2.0.3
       pkg-types: 2.3.0
-      playwright-core: 1.60.0
+      playwright-core: 1.60.0(patch_hash=246aba5c3aab0bf9c38ff356e668ff708c5043b351e7fc36c84db1547281aebf)
       radix3: 1.1.2
       satori: 0.18.4
       satori-html: 0.3.2
@@ -10403,7 +10408,7 @@ snapshots:
       exsolve: 1.0.8
       pathe: 2.0.3
 
-  playwright-core@1.60.0: {}
+  playwright-core@1.60.0(patch_hash=246aba5c3aab0bf9c38ff356e668ff708c5043b351e7fc36c84db1547281aebf): {}
 
   postcss-calc@10.1.1(postcss@8.5.10):
     dependencies:

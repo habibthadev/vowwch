@@ -21,7 +21,10 @@
       "esbuild",
       "@parcel/watcher",
       "better-sqlite3"
-    ]
+    ],
+    "patchedDependencies": {
+      "playwright-core@1.60.0": "patches/playwright-core@1.60.0.patch"
+    }
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.2.0",

@@ -1,0 +1,57 @@
+diff --git a/lib/coreBundle.js b/lib/coreBundle.js
+index bc601fcf741792e3fc76884a28a3c43f80c6472f..f64ebcd18136a2ab725077216e0840141aa86f26 100644
+--- a/lib/coreBundle.js
++++ b/lib/coreBundle.js
+@@ -28743,7 +28743,7 @@ var init_registry = __esm({
+       }
+     };
+     defaultCacheDirectory = (() => {
+-      if (process.platform === "linux")
++      if (process.platform === "linux" || process.platform === "android")
+         return process.env.XDG_CACHE_HOME || import_path19.default.join(import_os8.default.homedir(), ".cache");
+       if (process.platform === "darwin")
+         return import_path19.default.join(import_os8.default.homedir(), "Library", "Caches");
+@@ -48010,7 +48010,7 @@ var init_serverRegistry = __esm({
+       }
+     };
+     defaultCacheDirectory2 = (() => {
+-      if (process.platform === "linux")
++      if (process.platform === "linux" || process.platform === "android")
+         return process.env.XDG_CACHE_HOME || import_path33.default.join(import_os16.default.homedir(), ".cache");
+       if (process.platform === "darwin")
+         return import_path33.default.join(import_os16.default.homedir(), "Library", "Caches");
+@@ -65325,7 +65325,7 @@ var init_registry2 = __esm({
+       if (process.env.PLAYWRIGHT_DAEMON_SESSION_DIR)
+         return process.env.PLAYWRIGHT_DAEMON_SESSION_DIR;
+       let localCacheDir;
+-      if (process.platform === "linux")
++      if (process.platform === "linux" || process.platform === "android")
+         localCacheDir = process.env.XDG_CACHE_HOME || import_path49.default.join(import_os21.default.homedir(), ".cache");
+       if (process.platform === "darwin")
+         localCacheDir = import_path49.default.join(import_os21.default.homedir(), "Library", "Caches");
+diff --git a/lib/serverRegistry.js b/lib/serverRegistry.js
+index 0469820a09d9264e78d483d4ca0b8ea6b850a827..b59f13dfd7fba7aa73b2b4de16655c2e817ad05d 100644
+--- a/lib/serverRegistry.js
++++ b/lib/serverRegistry.js
+@@ -7277,7 +7277,7 @@ async function canConnectTo(descriptor) {
+   });
+ }
+ var defaultCacheDirectory = (() => {
+-  if (process.platform === "linux")
++  if (process.platform === "linux" || process.platform === "android")
+     return process.env.XDG_CACHE_HOME || import_path2.default.join(import_os.default.homedir(), ".cache");
+   if (process.platform === "darwin")
+     return import_path2.default.join(import_os.default.homedir(), "Library", "Caches");
+diff --git a/lib/tools/cli-client/registry.js b/lib/tools/cli-client/registry.js
+index fb359ed5c3d51959bf27cc452aadab400911f669..c3267ed0f63105e5b393f49b5c9d1e46ee12e251 100644
+--- a/lib/tools/cli-client/registry.js
++++ b/lib/tools/cli-client/registry.js
+@@ -120,7 +120,7 @@ const baseDaemonDir = (() => {
+   if (process.env.PLAYWRIGHT_DAEMON_SESSION_DIR)
+     return process.env.PLAYWRIGHT_DAEMON_SESSION_DIR;
+   let localCacheDir;
+-  if (process.platform === "linux")
++  if (process.platform === "linux" || process.platform === "android")
+     localCacheDir = process.env.XDG_CACHE_HOME || import_path.default.join(import_os.default.homedir(), ".cache");
+   if (process.platform === "darwin")
+     localCacheDir = import_path.default.join(import_os.default.homedir(), "Library", "Caches");
