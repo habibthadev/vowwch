@@ -13,7 +13,7 @@ defineProps<{
       flex-direction: column;
       width: 1200px;
       height: 630px;
-      background: #0a0a09;
+      background-color: #0a0a09;
       padding: 72px 80px;
       justify-content: space-between;
     "
@@ -26,35 +26,16 @@ defineProps<{
           justify-content: center;
           width: 32px;
           height: 32px;
-          border-radius: 6px;
-          background: #161615;
-          border: 1px solid #2a2a28;
           flex-shrink: 0;
         "
       >
         <span
-          style="
-            font-family: &quot;JetBrains Mono&quot;, monospace;
-            font-size: 15px;
-            font-weight: 600;
-            color: #a0a09c;
-            line-height: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
+          style="font-family: JetBrains Mono; font-size: 18px; font-weight: 600; color: #a1a1aa"
         >
-          {v}
+          v
         </span>
       </div>
-      <span
-        style="
-          font-family: &quot;Geist&quot;, sans-serif;
-          font-size: 14px;
-          color: #5a5a57;
-          letter-spacing: 0.02em;
-        "
-      >
+      <span style="font-family: Geist; font-size: 14px; color: #71717a">
         {{ url || "vowwch.dev" }}
       </span>
     </div>
@@ -62,10 +43,10 @@ defineProps<{
     <div style="display: flex; flex-direction: column; gap: 18px">
       <div
         style="
-          font-family: &quot;Geist&quot;, sans-serif;
-          font-size: 54px;
+          font-family: Geist;
+          font-size: 56px;
           font-weight: 700;
-          color: #f0f0ee;
+          color: #fafafa;
           line-height: 1.15;
           max-width: 900px;
           letter-spacing: -0.03em;
@@ -76,12 +57,11 @@ defineProps<{
       <div
         v-if="description"
         style="
-          font-family: &quot;Geist&quot;, sans-serif;
-          font-size: 22px;
-          color: #9a9a95;
+          font-family: Geist;
+          font-size: 24px;
+          color: #a1a1aa;
           line-height: 1.5;
           max-width: 800px;
-          letter-spacing: -0.01em;
         "
       >
         {{ description }}
@@ -89,17 +69,8 @@ defineProps<{
     </div>
 
     <div style="display: flex; align-items: center; gap: 16px">
-      <div
-        style="width: 32px; height: 3px; background: #63635f; border-radius: 2px; flex-shrink: 0"
-      />
-      <span
-        style="
-          font-family: &quot;JetBrains Mono&quot;, monospace;
-          font-size: 13px;
-          color: #5a5a57;
-          letter-spacing: 0.02em;
-        "
-      >
+      <div style="width: 32px; height: 3px; background-color: #52525b; flex-shrink: 0" />
+      <span style="font-family: JetBrains Mono; font-size: 13px; color: #71717a">
         Zero dependencies &middot; Runtime predicates &middot; TypeScript
       </span>
     </div>
