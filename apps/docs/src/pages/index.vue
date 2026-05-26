@@ -7,9 +7,11 @@ import { Icon } from "@iconify/vue"
 
 definePageMeta({ layout: "default" })
 
+const ogUrl = useRequestURL().hostname
 defineOgImageComponent("OgImageDefault", {
   title: "vowwch",
   description: "Runtime contracts for any JavaScript function. Zero dependencies.",
+  url: ogUrl,
 })
 </script>
 

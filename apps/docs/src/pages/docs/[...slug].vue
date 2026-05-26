@@ -37,9 +37,11 @@ useHead({
   ]),
 })
 
+const ogUrl = useRequestURL().hostname
 defineOgImageComponent("OgImageDefault", {
   title: page.value?.title ?? "vowwch",
   description: page.value?.description ?? "Runtime contracts for any JavaScript function.",
+  url: ogUrl,
 })
 
 const mobileTocOpen = ref(false)

@@ -62,6 +62,14 @@ export default defineNuxtConfig({
       width: 1200,
       height: 630,
     },
+    fonts: [
+      "Geist:400",
+      "Geist:500",
+      "Geist:600",
+      "Geist:700",
+      "JetBrains Mono:400",
+      "JetBrains Mono:600",
+    ],
   },
 
   typescript: {

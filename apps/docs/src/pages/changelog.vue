@@ -3,9 +3,11 @@ import { computed } from "vue"
 
 definePageMeta({ layout: "default" })
 
+const ogUrl = useRequestURL().hostname
 defineOgImageComponent("OgImageDefault", {
   title: "Changelog",
   description: "All notable changes to vowwch.",
+  url: ogUrl,
 })
 
 interface ChangelogRelease {

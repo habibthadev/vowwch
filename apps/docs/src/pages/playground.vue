@@ -6,9 +6,11 @@ import { usePlayground } from "@/composables/usePlayground"
 
 definePageMeta({ layout: "default" })
 
+const ogUrl = useRequestURL().hostname
 defineOgImageComponent("OgImageDefault", {
   title: "Playground",
   description: "Experiment with vowwch contracts in the browser.",
+  url: ogUrl,
 })
 
 const { code, mode, result, running, run, reset, updateMode } = usePlayground()
