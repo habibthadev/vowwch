@@ -19,24 +19,8 @@ defineProps<{
     "
   >
     <div style="display: flex; align-items: center; gap: 12px">
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 32px;
-          height: 32px;
-          flex-shrink: 0;
-        "
-      >
-        <span
-          style="font-family: JetBrains Mono; font-size: 18px; font-weight: 600; color: #a1a1aa"
-        >
-          v
-        </span>
-      </div>
-      <span style="font-family: Geist; font-size: 14px; color: #71717a">
-        {{ url || "vowwch.dev" }}
+      <span style="font-family: JetBrains Mono; font-size: 14px; color: #71717a">
+        {{ url || "vowwch.vercel.app" }}
       </span>
     </div>
 
