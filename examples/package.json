@@ -1,0 +1,22 @@
+{
+  "name": "vowwch-examples",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "edge-runtime": "tsx edge-runtime.ts",
+    "with-hono": "tsx with-hono.ts",
+    "with-prisma": "tsx with-prisma.ts",
+    "with-zod": "tsx with-zod.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "hono": "^4.0.0",
+    "pino": "^9.0.0",
+    "vowwch": "workspace:*",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
+}
