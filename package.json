@@ -1,0 +1,36 @@
+{
+  "name": "vowwch-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "pnpm --filter vowwch build",
+    "test": "pnpm --filter vowwch test",
+    "typecheck": "pnpm --filter vowwch typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "bench": "pnpm --filter vowwch bench",
+    "size": "pnpm --filter vowwch size",
+    "prepublishOnly": "pnpm typecheck && pnpm format:check && pnpm lint && pnpm build && pnpm test && pnpm size",
+    "prepare": "husky"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@parcel/watcher",
+      "better-sqlite3"
+    ]
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.2.0",
+    "eslint": "^9.27.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "size-limit": "^11.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  }
+}
