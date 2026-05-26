@@ -52,6 +52,7 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
+    runtimeBrowser: false,
     compatibility: {
       prerender: {
         chromium: false,
