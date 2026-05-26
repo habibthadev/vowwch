@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm --filter vowwch-docs build",
+  "outputDirectory": "apps/docs/.vercel/output/static",
+  "installCommand": "pnpm install",
+  "framework": null
+}
