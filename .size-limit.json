@@ -1,0 +1,12 @@
+[
+  {
+    "path": "packages/vowwch/dist/index.js",
+    "limit": "2 kB",
+    "gzip": true
+  },
+  {
+    "path": "packages/vowwch/dist/index.cjs",
+    "limit": "2 kB",
+    "gzip": true
+  }
+]
