@@ -1,0 +1,2 @@
+pnpm --filter vowwch test
+pnpm --filter vowwch size
