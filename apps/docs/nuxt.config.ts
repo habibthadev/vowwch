@@ -9,7 +9,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-04-17",
 
   nitro: {
-    preset: "vercel-static",
+    preset: "vercel",
+  },
+
+  site: {
+    url: "https://vowwch.vercel.app",
   },
 
   modules: ["@nuxt/content", "@nuxtjs/color-mode", "@vueuse/nuxt", "nuxt-og-image"],
@@ -48,7 +52,6 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    runtimeCacheStorage: false,
     compatibility: {
       prerender: {
         chromium: false,
